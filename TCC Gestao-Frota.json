@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "fd4696e0-5d3b-4c9e-96d2-50e39cc2cb0d",
+		"name": "TCC Gestao-Frota",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Cadastrar Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\" : \"Nayra Carol\",\n    \"telefone\" : \"1231231\",\n    \"email\" : \"nay@teste.com\",\n    \"apelido\" : \"nay\",\n    \"senha\" : \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/gestao-frota/api/v1/users",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"gestao-frota",
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/gestao-frota/api/v1/users/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"gestao-frota",
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todos Usuários",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/gestao-frota/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"gestao-frota",
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar um Usuário",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/gestao-frota/api/v1/users/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"gestao-frota",
+								"api",
+								"v1",
+								"users",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Usuário",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/gestao-frota/api/v1/users/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"gestao-frota",
+								"api",
+								"v1",
+								"users",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

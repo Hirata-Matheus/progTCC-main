@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Http\Middleware;
+use \App\Session\Admin\Login as SessionAdminLogin;
+
+class RequireAdminLogin{
+    public function handle($request, $next){
+        // verifica se o usuario esta logado
+        if (!SessionAdminLogin::isLogged()) {
+            $request->getRouter()->redirect('/admin\login');
+        }
+        // continua a execução
+        return $next($request);
+    }
+}
